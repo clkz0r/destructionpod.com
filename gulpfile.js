@@ -25,10 +25,6 @@ gulp.task('sass', function () {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('./maps'))
-    //.pipe(prefixer({
-     // browsers: ['last 2 versions'],
-    //  grid: true
-    //}))
     .pipe(gulp.dest('./css'));
  });
 

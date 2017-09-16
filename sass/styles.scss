@@ -1,7 +1,9 @@
 // Vendor dependencies.
 
 //Author dependencies.
-@import 'settings/_variables.scss';
+@import 'settings/variables';
 
 // Global CSS and UI patterns
-@import 'base/_type.scss';
+@import 'partials/typeography';
+@import 'partials/globals';
+@import 'partials/articles';

@@ -1,0 +1,38 @@
+article {
+  p {
+    padding: 0 $base-padding;
+  }
+  a {
+    color: $text-color;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    img {
+      margin-top: $base-margin;
+      padding: 0 $base-padding;
+      width: 100%;
+      @media (max-width: 36em) {
+        padding: 0;
+      }
+    }
+    figcaption {
+      font-family: $font-heading;
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin: -$base-margin 0 $base-margin;
+      text-align: center;
+    }  
+  }
+}
+
+#disqus_thread {
+  margin: 4rem 0 0;
+  padding: 0 $base-padding;
+}
