@@ -1,0 +1,61 @@
+
+* {
+    max-width: 54rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+body {
+    font-family: $font-body;
+    color: $text-color;
+    font-size: 18px;
+}
+
+article {
+    width: 80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    color: $heading-color;
+}
+
+blockquote {
+    padding-left: 2rem;
+    font-style: italic;
+}
+
+figure blockquote {
+    text-align: center;
+    padding: 0;
+}
+
+figure blockquote p {
+    font-weight: 700;
+}
+
+cite {
+    font-style: normal;
+}
+
+hr {
+    margin: 1.6rem auto;
+    height: 1.6rem;
+    text-align: center;
+    display: block;
+    border: 0;
+}
+
+hr:before {
+    content: "···";
+    letter-spacing: 1em;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.attention {
+    font-size: 1.5rem;
+}

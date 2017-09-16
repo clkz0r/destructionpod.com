@@ -1,0 +1,19 @@
+{
+  "name": "ditb",
+  "version": "1.0.0",
+  "description": "ditb website 2017/18",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "clk",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "run-sequence": "^2.1.0"
+  }
+}
