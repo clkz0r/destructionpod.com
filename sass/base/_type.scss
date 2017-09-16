@@ -3,18 +3,18 @@
     max-width: 54rem;
     margin-left: auto !important;
     margin-right: auto !important;
-    line-height: 2rem;
-    margin-bottom: 2rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
 }
 body {
     font-family: $font-body;
     color: $text-color;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 article {
     width: 80%;
-    a:any-link {
+    a {
         color:$text-color !important;
         text-decoration: underline;
     }
@@ -25,6 +25,25 @@ h1, h2, h3, h4, h5, h6 {
     color: $heading-color;
 }
 
+h1 {
+    margin-top: 6rem;
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+h2 {
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.35;
+}
+
+h6 {
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;  
+}
+
 blockquote {
     padding-left: 2rem;
     font-style: italic;
@@ -33,18 +52,19 @@ blockquote {
 figure blockquote {
     text-align: center;
     padding: 0;
-}
-
-figure blockquote p {
-    font-weight: 700;
-}
-
-cite {
-    font-style: normal;
+    margin: 4rem 0;
+    p {
+        font-weight: 700;
+        font-size: 1.35rem;
+        line-height: 1.6;
+    }
+    cite  {
+        font-style: normal;
+    }
 }
 
 hr {
-    margin: 1.6rem auto;
+    margin: 2.25rem auto;
     height: 1.6rem;
     text-align: center;
     display: block;
@@ -53,7 +73,9 @@ hr {
 
 hr:before {
     content: "···";
+    font-size: 2rem;
     letter-spacing: 1em;
+    line-height: 0;
 }
 
 .align-center {
@@ -61,5 +83,6 @@ hr:before {
 }
 
 .attention {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    line-height: 1.5;
 }
