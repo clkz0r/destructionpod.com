@@ -8,10 +8,17 @@
   },
   "author": "clk",
   "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.8.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "run-sequence": "^2.1.0"
