@@ -1,4 +1,7 @@
 article {
+  display: block;
+  margin: 0 auto;
+  max-width: 54rem;
   p {
     padding: 0 $base-padding;
   }
@@ -35,4 +38,10 @@ article {
 #disqus_thread {
   margin: 4rem 0 0;
   padding: 0 $base-padding;
+}
+
+.article-hero {
+  background: url("http://clkz0r.com/ditb/dist/img/large.jpg") center center / cover no-repeat fixed;
+  height: 70vh;
+  position: relative;
 }

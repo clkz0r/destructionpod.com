@@ -24,7 +24,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(sourcemaps.write('./maps'))
+    .pipe(sourcemaps.write('./_maps'))
     .pipe(gulp.dest('./css'));
  });
 
@@ -51,16 +51,18 @@ gulp.task('watch', ['connect'], function() {
   gulp.watch('sass/**/*.scss',['sass','deps']);
 });
 
-// Build - Runs Scripts, CSS & HTML tasks & Moves files to Dest
-//gulp.task('build', ['sass', 'html'], function() {
-//  return gulp.src([
-//    'css/**',
-//    'img/**',
-//    '*.html',
-//    '*.png',
-//    '*.ico'], { base: './'})
-//  .pipe(gulp.dest('dist'));
-//});
+// gulpBuild - Runs Scripts, CSS & HTML tasks & Moves files to Dest
+gulp.task('build', ['sass','deps','html'], function() {
+  return gulp.src([
+    'css/**',
+    '!css/**/_*/',
+    '!css/_*/**/*',
+    'img/**',
+    '*.html',
+    '*.png',
+    '*.ico'], { base: './'})
+  .pipe(gulp.dest('dist'));
+});
 
 // Default Task
 gulp.task('default', function (callback) {
