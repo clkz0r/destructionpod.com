@@ -1,12 +1,19 @@
 * {
-  //box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
   line-height: $base-line;
   margin-bottom: $base-margin;
 }
 
-
 html, body {
-  color: $text-color;
+  color: $body-color;
   font-family: $font-body;
   font-size: 17px;
+  height: 100%;
+}
+
+::selection {
+  background: $primary-color;
+  color: $white;
 }

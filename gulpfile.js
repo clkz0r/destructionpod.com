@@ -17,6 +17,12 @@ gulp.task('html', function() {
     .pipe(connect.reload());
 });
 
+// JS
+gulp.task('scripts', function() {
+  return gulp.src(['./js/**/*.js'])
+    .pipe(connect.reload());
+});
+
 // SASS
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -48,6 +54,7 @@ gulp.task('connect', function() {
 // Watch Directory w/ Live Reload Dependancy
 gulp.task('watch', ['connect'], function() {
   gulp.watch('*.html', ['html']);
+  gulp.watch('js/**/*.js', ['scripts']);
   gulp.watch('sass/**/*.scss',['sass','deps']);
 });
 
@@ -55,6 +62,7 @@ gulp.task('watch', ['connect'], function() {
 gulp.task('build', ['sass','deps','html'], function() {
   return gulp.src([
     'css/**',
+    'js/**',
     '!css/**/_*/',
     '!css/_*/**/*',
     'img/**',

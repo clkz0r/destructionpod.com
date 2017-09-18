@@ -5,8 +5,10 @@ $primary-color: rgb(16, 158, 99);
 $secondary-color: rgb(9, 89, 55);
 
 // text colours //
-$text-color: rgba(0, 0, 0, 0.65);
+$body-color: rgba(0, 0, 0, 0.65);
 $heading-color: rgba(0, 0, 0, 0.75);
+$light-grey: rgba(204, 204, 204, 0.25); 
+$white: rgba(255, 255, 255, 1);
 
 // fonts //
 @import url('http://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Open+Sans:400,700');
