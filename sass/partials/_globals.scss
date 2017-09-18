@@ -1,10 +1,11 @@
 * {
-  box-sizing: border-box;
-  line-height: 1.8;
+  //box-sizing: border-box;
+  line-height: $base-line;
   margin-bottom: $base-margin;
 }
 
-body {
+
+html, body {
   color: $text-color;
   font-family: $font-body;
   font-size: 17px;

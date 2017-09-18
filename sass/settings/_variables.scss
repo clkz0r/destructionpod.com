@@ -1,11 +1,11 @@
 // SITE VARIABLES //
 
 // background colours //
-$primary-color: #109e63;
-$secondary-color: #095937;
+$primary-color: rgb(16, 158, 99);
+$secondary-color: rgb(9, 89, 55);
 
 // text colours //
-$text-color: rgba(0, 0, 0, 0.68);
+$text-color: rgba(0, 0, 0, 0.65);
 $heading-color: rgba(0, 0, 0, 0.75);
 
 // fonts //
@@ -16,3 +16,4 @@ $font-heading: 'Open Sans', sans-serif;
 // margins & padding //
 $base-margin: 1.6rem;
 $base-padding: 1.6rem;
+$base-line: 1.8rem;
